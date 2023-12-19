@@ -10,96 +10,73 @@
 <body class="bg-slate-200 w-11/12 m-auto">
 
 <header>
-    <h2 class="text-5xl font-bold text-center py-2 bg-zinc-300">My Money</h2>
+    <h2 class="text-2xl text-white rounded-br-lg rounded-bl-lg sm:text-5xl font-bold text-center py-2 bg-gray-400">My Money</h2>
 </header>   
 
 
 
-<main class="sm:flex my-2 bg-slate-300">
+<main class="sm:flex my-2 bg-slate-500 rounded-md text-white">
 
 
     <!-- IMAGE  -->
     <section class=" sm:w-7/12 p-3">
-        <img src="img/money-cover.jpg" alt="">
+        <img class="rounded-md shadow-2xl shadow-sky-950" src="img/money-cover.jpg" alt="">
     </section>
 
   
      <!-- CALCULATE  -->
-    <section class="sm:w-5/12 p-3">
+    <section class="sm:w-5/12 p-3">        
 
-
-
-        
-        <h3 class="text-center text-3xl">Income</h3>
+        <h3 class="text-center text-2xl sm:text-3xl">INCOME</h3>
         <!-- ------------------------------------  -->
         
-        <div class="flex my-3 p-1 justify-center m-auto bg-red-100 ">
-
-          <span class="w-32 sm:text-2xl bg-gray-300 py-3 px-2 font-medium text-end mr-3"><p>Income : </p></span>
-          <input class="sm:w-5/12 w-full py-3 px-2 rounded-md" type="text" name="" id="">
+        <div class="flex my-3 p-1 justify-center m-auto ">
+          <span class="w-32 sm:text-2xl  py-3 px-2 font-medium text-end mr-3"><p>Income : </p></span>
+          <input class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="" id="">
         </div>
-
-
 
 <!-- ------------------------------- -->
         <h3 class="text-center text-3xl ">Expenses</h3>
 <!-- ------------------------------  -->
-        <div class="flex my-3 p-1 justify-center m-auto bg-red-100 ">
-             <span class="w-32 sm:text-2xl bg-gray-300 py-3 px-2 font-medium text-end mr-3"><p>Food : </p></span>
-            <input class="sm:w-5/12 w-full py-3 px-2 rounded-md" type="text" name="" id="">
+        <div class="flex my-3 p-1 justify-center m-auto  ">
+             <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Food : </p></span>
+             <input class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="" id="">
+            </div>
         </div>
+        <div class="flex my-3 p-1 justify-center m-auto  ">
+             <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Rent : </p></span>
+             <input class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="" id="">
+            </div>
+        </div>
+            <div class="flex my-3 p-1 justify-center m-auto  ">
+                <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Doctor : </p></span>
+                <input class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="" id="">
+                </div>
+            </div>
 
-        <div class="flex my-3 p-1 justify-center m-auto bg-red-100 ">
-             <span class="w-32 sm:text-2xl bg-gray-300 py-3 px-2 font-medium text-end mr-3"><p>Rent : </p></span>
-            <input class="sm:w-5/12 w-full py-3 px-2 rounded-md" type="text" name="" id="">
-        </div>
-        <div class="flex my-3 p-1 justify-center m-auto bg-red-100 ">
-             <span class="w-32 sm:text-2xl bg-gray-300 py-3 px-2 font-medium text-end mr-3"><p>Cloths : </p></span>
-            <input class="sm:w-5/12 w-full py-3 px-2 rounded-md" type="text" name="" id="">
-        </div>
-  
         <div> 
-            <button class="bg-yellow-600  px-6 py-3 sm:text-2xl rounded-md font-semibold m-auto justify-center block">Calcuate</button>
-            <h4 class="sm:text-2xl font-semibold text-center">Total Expenses : <span> 243</span></h4>
-            <h4 class="sm:text-2xl font-semibold text-center">Balanced : <span>324</span></h4>
+            <button class="bg-slate-800 hover:bg-slate-700  px-6 py-3 sm:text-2xl rounded-md font-semibold m-auto justify-center block">Calculate</button>
+            <h4 class="sm:text-2xl my-1 font-semibold text-center">Total Expenses : <span> 243</span></h4>
+            <h4 class="sm:text-2xl my-1 font-semibold text-center">Balanced : <span>324</span></h4>
         
         </div>
+        <!-- ----------------  -->
+            <div class="flex justify-center items-center gap-7 mt-2 py-3 bg-slate-950 border-slate-500 rounded-md">
 
-
-
-
-
-            <div class="flex justify-center items-center gap-7 mt-2 py-3 bg-red-700 border">
-
-                <p class="inline text-end bg-emerald-400 sm:text-2xl font-semibold">Save :</p>
-                <input class="w-3/12 py-2 px-3 rounded-md" type="text" name="" id="">
-                <p class="inline text-end bg-emerald-400 sm:text-2xl font-semibold">%</p>
-                <button class="bg-yellow-600 inline font-semibold sm:text-2xl px-4 py-2 ">Calculate</button>
+                <p class="inline text-end  sm:text-2xl font-semibold">Save  :</p>
+                <input class="w-3/12 py-2 bg-slate-400 text-black font-semibold px-3 rounded-md" type="text" name="" id="">
+                <p class="inline text-end  sm:text-2xl font-semibold">%</p>
+                <button class="bg-slate-800 hover:bg-slate-700 rounded-md    inline font-semibold sm:text-2xl px-4 py-2 ">Calculate</button>
             </div>
-
 
             <div> 
-                <h4 class="sm:text-2xl font-semibold text-center">Saving Amount : <span> 243</span></h4>
-                <h4 class="sm:text-2xl font-semibold text-center">Remaining Balance  : <span>324</span></h4>
+                <h4 class="sm:text-2xl my-1 font-semibold text-center">Saving Amount : <span> 243</span></h4>
+                <h4 class="sm:text-2xl my-1 font-semibold text-center">Remaining Balance  : <span>324</span></h4>
             
             </div>
-    
-
-   
-
-    
-
-
-
-
-
     </section>
     
     
-    
-
-
-
 
 </main>
 
@@ -108,13 +85,6 @@
 
 <footer>
 
-    
-<!-- BIIXXXXXXXXXXXXXXXXXXXXXX  -->
-    <!-- <div class="flex my-3 justify-center m-auto bg-red-100 ">
-
-        <span class="w-20 bg-gray-300 text-end mr-3"><p> : </p></span>
-        <input type="text" name="" id="">
-      </div> -->
 </footer>
 
 
