@@ -19,73 +19,73 @@
 
 
     <!-- IMAGE  -->
-    <section class=" sm:w-7/12 p-3">
-        <img class="rounded-md shadow-2xl opacity-75 shadow-sky-950" src="img/money-cover.jpg" alt="">
+    <section class=" sm:w-7/12   p-3">
+        <img class="rounded-md shadow-2xl opacity-75 h-full shadow-sky-950" src="img/money-cover.jpg" alt="">
     </section>
 
   
      <!-- CALCULATE  -->
     <section class="sm:w-5/12 p-3">        
 
-        <h3 class="text-center text-2xl sm:text-3xl">INCOME</h3>
-        <!-- ------------------------------------  -->
-        
-        <div class="flex my-3 p-1 justify-center m-auto ">
-          <span class="w-32 sm:text-2xl  py-3 px-2 font-medium text-end mr-3"><p>Income : </p></span>
-          <input id="Income" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
-        </div>
-
-<!-- ------------------------------- -->
-        <h3 class="text-center text-3xl ">Expenses</h3>
-<!-- ------------------------------  -->
-        <div class="flex my-3 p-1 justify-center m-auto  ">
-             <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Food : </p></span>
-             <input id="food" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
-            </div>
-        </div>
-        <div class="flex my-3 p-1 justify-center m-auto  ">
-             <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Rent : </p></span>
-             <input id="rent" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
-            </div>
-        </div>
-            <div class="flex my-3 p-1 justify-center m-auto  ">
-                <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Doctor : </p></span>
-                <input id="doctor" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
+            <div class="bg-slate-600 rounded-md py-3">
+                <h3 class="text-center text-2xl sm:text-3xl">INCOME</h3>
+                <!-- ------------------------------------  -->
+                
+                <div class="flex my-3 p-1 justify-center m-auto ">
+                    <span class="w-32 sm:text-2xl  py-3 px-2 font-medium text-end mr-3"><p>Income : </p></span>
+                    <input id="Income" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
                 </div>
-            </div>
-
-        <div> 
-            
-            <button id="calculate" class="bg-slate-800 hover:bg-slate-700  px-6 py-3 sm:text-2xl rounded-md font-semibold m-auto justify-center block">Calculate</button>
-
-            <h4 class="sm:text-2xl my-1 font-semibold text-center">Total Expenses : <span id="expanes"> 243</span></h4>
-            <h4 class="sm:text-2xl my-1 font-semibold text-center">Balanced : <span id="balance">324</span></h4>
         
-        </div>
-        <!-- ----------------  -->
-            <div class="flex justify-center items-center gap-7 mt-2 py-3 bg-slate-950 border-slate-500 rounded-md">
+        <!-- ------------------------------- -->
+                <h3 class="text-center text-3xl ">Expenses</h3>
+        <!-- ------------------------------  -->
+                <div class="flex my-3 p-1 justify-center m-auto  ">
+                     <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Food : </p></span>
+                     <input id="food" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
+                </div>
+        
+                <div class="flex my-3 p-1 justify-center m-auto  ">
+                     <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Rent : </p></span>
+                     <input id="rent" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
+                </div>
+        
+              
+                <div class="flex my-3 p-1 justify-center m-auto  ">
+                        <span class="w-32 sm:text-2xl py-3 px-2 font-medium text-end mr-3"><p>Doctor : </p></span>
+                        <input id="doctor" class="sm:w-5/12 w-4/12 bg-slate-400 text-black font-semibold py-3 px-2 rounded-md" type="text" name="">
+                     
+                </div >
+        
+                <div> 
+                    <button id="calculate" class="bg-slate-800 hover:bg-slate-700  px-6 py-3 sm:text-2xl rounded-md font-semibold m-auto justify-center block">Calculate</button>
+                    <h4 class="sm:text-2xl my-1 font-semibold text-center">Total Expenses : <span id="expanes"> 00.0</span></h4>
+                    <h4 class="sm:text-2xl my-1 font-semibold text-center">Balanced : <span id="balance">00.0</span></h4>
+                </div>
 
-                <p class="inline text-end  sm:text-2xl font-semibold">Save  :</p>
-                <input class="w-3/12 py-2 bg-slate-400 text-black font-semibold px-3 rounded-md" type="text" name="" id="">
-                <p class="inline text-end  sm:text-2xl font-semibold">%</p>
-                <button class="bg-slate-800 hover:bg-slate-700 rounded-md    inline font-semibold sm:text-2xl px-4 py-2 ">Calculate</button>
+                <!-- ----------------  -->
+                    <div class="flex justify-center items-center gap-7 mt-2 py-3 bg-slate-950 mx-2 border-slate-500 rounded-md">
+                        <p class="inline text-end  sm:text-2xl font-semibold">Save  :</p>
+                        <input id="percent" class="w-3/12 py-2 bg-slate-400 text-black font-semibold px-3 rounded-md" type="text" name="">
+                        <p class="inline text-end  sm:text-2xl font-semibold">%</p>
+                        <button id="savings" class="bg-slate-800 hover:bg-slate-700 rounded-md  inline font-semibold sm:text-2xl px-4 py-2 ">Calculate</button>
+                    </div>
+        
+                    <div> 
+                        <h4 class="sm:text-2xl my-1 font-semibold text-center">Saving Amount : <span id="saved">00.00</span></h4>
+                        <h4 class="sm:text-2xl my-1 font-semibold text-center">Remaining Balance  : <span id="remain-balance">00.00</span></h4>
+                    </div>
+
             </div>
-
-            <div> 
-                <h4 class="sm:text-2xl my-1 font-semibold text-center">Saving Amount : <span> 243</span></h4>
-                <h4 class="sm:text-2xl my-1 font-semibold text-center">Remaining Balance  : <span>324</span></h4>
             
-            </div>
-    </section>
-    
-    
 
+    </section>
 </main>
 
-
-
-
-<footer>
+<footer class="mt-5">
+    <div class="bg-gray-300 rounded-sm text-yellow-50">
+            <p class="text-center sm:text-2xl">Code By Mohd. Jahidul Islam</p>
+            <p class="text-center sm:text-2xl">Tailwindcss and Javascript</p>
+    </div>
 
 </footer>
 

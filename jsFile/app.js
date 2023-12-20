@@ -1,4 +1,4 @@
-console.log('Loaf From_ App.js')
+console.log('Load : From_ App.js')
 
 function getInputToValue(inputId){
 
@@ -7,6 +7,21 @@ function getInputToValue(inputId){
     const getValue =parseFloat(getString);
 
     return getValue;
+}
+
+
+function getTextToValue(textId){
+
+    const getId = document.getElementById(textId);
+    const getStringtoNumber = Number(getId.innerText);
+
+    const getValue = parseFloat(getStringtoNumber);
+    return getValue;
+}
+
+function setValueinTag(theTagId, setValue){
+    const TagId = document.getElementById(theTagId);
+    TagId.innerText = setValue;
 }
 
 function totalExpanses(){
@@ -18,19 +33,26 @@ function totalExpanses(){
     return totalExpanses;
 }
 
-function setValueinTag(theTagId, setValue){
-    const TagId = document.getElementById(theTagId);
-    TagId.innerText = setValue;
-}
-
 document.getElementById('calculate').addEventListener('click', function(){
-
-    const income = getInputToValue("Income");
-    const expansesTotal = totalExpanses();
-    const balanced = income - expansesTotal;
-    setValueinTag("expanes",expansesTotal)
-    setValueinTag("balance",balanced)
-
-    // console.log(expansesTotal)
-
+        const income = getInputToValue("Income");
+        const expansesTotal = totalExpanses();
+        const balanced = income - expansesTotal;
+    setValueinTag("expanes",expansesTotal);
+    setValueinTag("balance",balanced);
 })
+
+ 
+document.getElementById('savings').addEventListener('click', function(){
+        const income = getInputToValue("Income");
+        const percent = getInputToValue('percent');
+        const savingsParcent = income * percent / 100; 
+    setValueinTag("saved",savingsParcent);   
+
+        const expaneAfter =  getTextToValue("balance");
+        const saved = getTextToValue("saved")
+        const savedTotal = expaneAfter - saved;
+    setValueinTag("remain-balance",savedTotal); 
+})
+
+
+
